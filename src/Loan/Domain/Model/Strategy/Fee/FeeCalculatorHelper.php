@@ -25,6 +25,6 @@ class FeeCalculatorHelper
         $summary = $fee + $amount;
         $roundedTo5 = ceil($summary / 5) * 5;
 
-        return $roundedTo5 - $amount;
+        return round($roundedTo5 - $amount, 2);
     }
 }
